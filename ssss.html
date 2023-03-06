@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+  display: none;
+}
+    </style>
+</head>
+<body>
+    <button id="move-btn">Move Element</button>
+<div id="element-to-move">This element will be moved</div>
+<script>
+    const moveBtn = document.getElementById('move-btn');
+const elementToMove = document.getElementById('element-to-move');
+let isMoved = false;
+
+moveBtn.addEventListener('click', function() {
+  if (!isMoved) {
+    elementToMove.style.transform = 'translateX(200px)';
+  } else {
+    elementToMove.style.transform = 'none';
+  }
+  isMoved = !isMoved;
+});
+
+</script>
+</body>
+</html>

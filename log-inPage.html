@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="log-inPage.css">
+    <script src="https://kit.fontawesome.com/251144cd57.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+    <div class="container">
+    <div class="Sign-in">
+        <h1 class="Sign">Sign In
+        </h1>
+    </div>
+    <div class="Body-form">
+        <div class="twitter">
+            <p class="Log">Login through social media</p>
+            <button class="button-twitter"><i class="fa-brands fa-twitter"></i></button>
+        </div>
+        <div class="facebook">
+            <button class="button-facebook"><i class="fa-brands fa-square-facebook"></i></i></button>
+        </div>
+        <div class="forms">
+            <div class="log-in-form">
+                <label>Username</label>
+                <input type="text" id="user-input" onkeyup="userValidate()">
+                <span id="User-error"></span>
+            </div>
+            <div class="password-in-form">
+                <label>Password</label>
+                <input type="password" id="input-password" onkeyup="passwordValidate()">
+                <span class="E" id="Password-Error"></span>
+            </div>
+            <div class="checkbox-form">
+                <p>Remember me</p>
+                <input class="check" type="checkbox">
+            </div>
+            <div class="login-button">
+                <button onclick="Submit()" class="logging-in">Sign In</button>
+                <span id="Submit-error"></span>
+            </div>
+            <div class="reset">
+                <a href="#">Reset Password</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+      let userError = document.getElementById("User-error");
+      let passwordError = document.getElementById("Password-Error");
+      let submitError = document.getElementById("Submit-error");
+
+      function userValidate() {
+        let userName = document.getElementById("user-input").value;
+
+        if(userName == 0) {
+            userError.innerHTML = '<p style="color: RED;">!</p>';
+            return false;
+        }
+          else {
+            userError.innerHTML = '<i class="fa-solid fa-circle-check" style="color:green"></i>';
+            return true;
+          }
+        }
+        function passwordValidate() {
+        let PassInput = document.getElementById("input-password").value;
+
+        if(PassInput == 0) {
+            passwordError.innerHTML = '<p style="color: RED;">!</p>';
+            return false;
+        }
+        if (!PassInput.match(/^[A-Za-z]{10}$/)) {
+            passwordError.innerHTML = '<i class="fa-solid fa-circle-check" style="color:green;"></i>';
+            return true;
+         }
+        }
+        function Submit(){
+            if(!userValidate() || !passwordValidate()){
+                submitError.style.display = "block";
+                submitError.innerHTML = '<p style="color:red;"> PLEASE FILL THE FORMS! </p>';
+                setTimeout(function(){submitError.style.display = "none";}, 3000);
+                return false;
+            }
+            else {
+                window.location.href = "website3.html";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

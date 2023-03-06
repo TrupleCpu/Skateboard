@@ -1,0 +1,297 @@
+* {
+   padding: 0;
+   margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+    
+}
+body {
+    zoom: 100%;
+    font-family: "ROBOTO", sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;   
+    background-color: rgb(23, 23, 23);
+}
+.navigation-bar {
+    position: absolute;
+    height: 70px;
+    right: 0;
+    left: 0;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center ;
+    
+}
+.nav-names {
+    display: flex;
+    font-size: 20px;
+}
+i {
+    position: absolute;
+    margin-left: 550px;
+    margin-top: -20px;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    transition: opacity 0.1s;
+}
+i:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+i:active {
+    opacity: 0.3;
+}
+#Users {
+    color:white;
+}
+a {
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}
+a:hover {
+    opacity: 0.4;
+}
+.swiper {
+    width: 100%;
+    height: 600px;
+    right: 0;
+    left: 0;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    background-color: rgb(23, 23, 23);
+    cursor: pointer;
+    margin-left: 0;
+    pointer-events: none;
+    border-bottom:solid 2px rgb(47, 46, 46);
+   
+    }
+    .S {
+        margin-left: 1200px;
+        animation-name: updown;
+        animation-duration: 8s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+    }
+    .message {
+        height: 300px;
+        width: 5000px;
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 310px;
+        color:white;
+        margin-top: 80px;
+        z-index: 5;
+    }
+    .Edition {
+        font-size: 100px;
+    }
+    .order {
+        z-index: 5;
+    }
+    .order-decks {
+        background-color: red;
+        margin-left: 200px;
+        margin-top: 150px;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: none;
+        font-size: 25px;
+        color:white;
+        font-weight: 700;
+        border-top-left-radius: 90px;
+    }
+    .order-decks:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .order-decks:active {
+        opacity: 0.1;
+        cursor: pointer;
+    }
+    .logo-website {
+        width: 80px;
+        margin-bottom: -10px;
+
+    }
+    .web-logo {
+        position: absolute;
+        margin-right: 1500px;
+    }
+    @keyframes updown {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-25px);
+        }
+    }
+   .container2{
+    width: 100%;
+    height: 500px;     
+    position: absolute;
+    margin-top: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 20px;
+    background-color: rgb(23, 23, 23);
+
+   }
+   .other-column{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 20px;
+    background-color: rgb(23, 23, 23);
+   }
+   .column1 {
+  
+  flex: 1;
+  height: 400px;
+   
+   }
+   .column2 {
+  
+    height: 400px;
+    flex: 1;
+    
+   }
+   .column3 {
+ 
+    height: 400px;
+    flex: 1;
+  
+   }
+   .column4 {
+  
+    height: 400px;
+    flex: 1;
+    
+   }
+   .image-skate-items {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    pointer-events: none;
+   }
+   .Name-1 {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -300px;
+   }
+   .the-name {
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+   }
+   .price {
+    font-weight: 400;
+    font-size: 23px;
+    color: rgb(180, 170, 170);
+    
+   }
+   .order-button {
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 250px;
+   }
+   .order-1 {
+    border:none;
+    background-color: rgb(48, 47, 47);
+    color:white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: opacity 0.1s;
+   }
+   .order-1:hover {
+    opacity: 0.8;
+   }
+   .order-1:active {
+    opacity: 0.4;
+}
+.the-name1{
+    margin-left: 290px;
+    margin-top: -300px;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+.order-button2{
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 10px;
+}
+@media (max-width: 640px){
+    * {
+        padding: 0;
+        margin: 0;
+        
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        overflow-y: hidden;
+    }
+    .container {
+        width: 100%;
+    }
+    .column1 {
+        margin-left: -90px;
+    }
+    .the-name {
+        font-size: 10px;
+    }
+    .Edition {
+        margin-left: -300px;
+        width: 50px;
+    }
+    .order {
+        margin-left: -400px;
+        position: absolute;
+        margin-top: -50px;
+       
+        position: absolute;
+     
+        
+    }
+    .swiper-wrapper {
+        margin-left: -900px;
+        position: absolute;
+    }
+}
+
